@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5089F1A61E1FDCBC00FADE27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089F1A51E1FDCBC00FADE27 /* AppDelegate.swift */; };
+		5089F1A81E1FDCBC00FADE27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089F1A71E1FDCBC00FADE27 /* ViewController.swift */; };
+		5089F1AB1E1FDCBC00FADE27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5089F1A91E1FDCBC00FADE27 /* Main.storyboard */; };
+		5089F1AD1E1FDCBC00FADE27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5089F1AC1E1FDCBC00FADE27 /* Assets.xcassets */; };
+		5089F1B01E1FDCBC00FADE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5089F1AE1E1FDCBC00FADE27 /* LaunchScreen.storyboard */; };
+		5089F1C51E1FDD3800FADE27 /* Redstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5089F1BC1E1FDD3800FADE27 /* Redstone.framework */; };
+		5089F1CC1E1FDD3800FADE27 /* RedstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089F1CB1E1FDD3800FADE27 /* RedstoneTests.swift */; };
+		5089F1CE1E1FDD3800FADE27 /* Redstone.h in Headers */ = {isa = PBXBuildFile; fileRef = 5089F1BE1E1FDD3800FADE27 /* Redstone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5089F1D11E1FDD3800FADE27 /* Redstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5089F1BC1E1FDD3800FADE27 /* Redstone.framework */; };
+		5089F1D21E1FDD3800FADE27 /* Redstone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5089F1BC1E1FDD3800FADE27 /* Redstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5089F1DB1E1FDD5300FADE27 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089F1DA1E1FDD5300FADE27 /* StateMachine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5089F1C61E1FDD3800FADE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5089F19A1E1FDCBC00FADE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5089F1BB1E1FDD3800FADE27;
+			remoteInfo = Redstone;
+		};
+		5089F1C81E1FDD3800FADE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5089F19A1E1FDCBC00FADE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5089F1A11E1FDCBC00FADE27;
+			remoteInfo = Minecraft;
+		};
+		5089F1CF1E1FDD3800FADE27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5089F19A1E1FDCBC00FADE27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5089F1BB1E1FDD3800FADE27;
+			remoteInfo = Redstone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5089F1D61E1FDD3800FADE27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5089F1D21E1FDD3800FADE27 /* Redstone.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5089F1A21E1FDCBC00FADE27 /* Minecraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minecraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5089F1A51E1FDCBC00FADE27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5089F1A71E1FDCBC00FADE27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5089F1AA1E1FDCBC00FADE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5089F1AC1E1FDCBC00FADE27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5089F1AF1E1FDCBC00FADE27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5089F1B11E1FDCBC00FADE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5089F1BC1E1FDD3800FADE27 /* Redstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Redstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5089F1BE1E1FDD3800FADE27 /* Redstone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Redstone.h; sourceTree = "<group>"; };
+		5089F1BF1E1FDD3800FADE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5089F1C41E1FDD3800FADE27 /* RedstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5089F1CB1E1FDD3800FADE27 /* RedstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedstoneTests.swift; sourceTree = "<group>"; };
+		5089F1CD1E1FDD3800FADE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5089F1DA1E1FDD5300FADE27 /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5089F19F1E1FDCBC00FADE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1D11E1FDD3800FADE27 /* Redstone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089F1B81E1FDD3800FADE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089F1C11E1FDD3800FADE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1C51E1FDD3800FADE27 /* Redstone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5089F1991E1FDCBC00FADE27 = {
+			isa = PBXGroup;
+			children = (
+				5089F1A41E1FDCBC00FADE27 /* Minecraft */,
+				5089F1BD1E1FDD3800FADE27 /* Redstone */,
+				5089F1CA1E1FDD3800FADE27 /* RedstoneTests */,
+				5089F1A31E1FDCBC00FADE27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5089F1A31E1FDCBC00FADE27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5089F1A21E1FDCBC00FADE27 /* Minecraft.app */,
+				5089F1BC1E1FDD3800FADE27 /* Redstone.framework */,
+				5089F1C41E1FDD3800FADE27 /* RedstoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5089F1A41E1FDCBC00FADE27 /* Minecraft */ = {
+			isa = PBXGroup;
+			children = (
+				5089F1A51E1FDCBC00FADE27 /* AppDelegate.swift */,
+				5089F1A71E1FDCBC00FADE27 /* ViewController.swift */,
+				5089F1A91E1FDCBC00FADE27 /* Main.storyboard */,
+				5089F1AC1E1FDCBC00FADE27 /* Assets.xcassets */,
+				5089F1AE1E1FDCBC00FADE27 /* LaunchScreen.storyboard */,
+				5089F1B11E1FDCBC00FADE27 /* Info.plist */,
+			);
+			path = Minecraft;
+			sourceTree = "<group>";
+		};
+		5089F1BD1E1FDD3800FADE27 /* Redstone */ = {
+			isa = PBXGroup;
+			children = (
+				5089F1BE1E1FDD3800FADE27 /* Redstone.h */,
+				5089F1DA1E1FDD5300FADE27 /* StateMachine.swift */,
+				5089F1BF1E1FDD3800FADE27 /* Info.plist */,
+			);
+			path = Redstone;
+			sourceTree = "<group>";
+		};
+		5089F1CA1E1FDD3800FADE27 /* RedstoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				5089F1CB1E1FDD3800FADE27 /* RedstoneTests.swift */,
+				5089F1CD1E1FDD3800FADE27 /* Info.plist */,
+			);
+			path = RedstoneTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5089F1B91E1FDD3800FADE27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1CE1E1FDD3800FADE27 /* Redstone.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5089F1A11E1FDCBC00FADE27 /* Minecraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5089F1B41E1FDCBC00FADE27 /* Build configuration list for PBXNativeTarget "Minecraft" */;
+			buildPhases = (
+				5089F19E1E1FDCBC00FADE27 /* Sources */,
+				5089F19F1E1FDCBC00FADE27 /* Frameworks */,
+				5089F1A01E1FDCBC00FADE27 /* Resources */,
+				5089F1D61E1FDD3800FADE27 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5089F1D01E1FDD3800FADE27 /* PBXTargetDependency */,
+			);
+			name = Minecraft;
+			productName = Minecraft;
+			productReference = 5089F1A21E1FDCBC00FADE27 /* Minecraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5089F1BB1E1FDD3800FADE27 /* Redstone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5089F1D31E1FDD3800FADE27 /* Build configuration list for PBXNativeTarget "Redstone" */;
+			buildPhases = (
+				5089F1B71E1FDD3800FADE27 /* Sources */,
+				5089F1B81E1FDD3800FADE27 /* Frameworks */,
+				5089F1B91E1FDD3800FADE27 /* Headers */,
+				5089F1BA1E1FDD3800FADE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Redstone;
+			productName = Redstone;
+			productReference = 5089F1BC1E1FDD3800FADE27 /* Redstone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5089F1C31E1FDD3800FADE27 /* RedstoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5089F1D71E1FDD3800FADE27 /* Build configuration list for PBXNativeTarget "RedstoneTests" */;
+			buildPhases = (
+				5089F1C01E1FDD3800FADE27 /* Sources */,
+				5089F1C11E1FDD3800FADE27 /* Frameworks */,
+				5089F1C21E1FDD3800FADE27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5089F1C71E1FDD3800FADE27 /* PBXTargetDependency */,
+				5089F1C91E1FDD3800FADE27 /* PBXTargetDependency */,
+			);
+			name = RedstoneTests;
+			productName = RedstoneTests;
+			productReference = 5089F1C41E1FDD3800FADE27 /* RedstoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5089F19A1E1FDCBC00FADE27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = nixWork;
+				TargetAttributes = {
+					5089F1A11E1FDCBC00FADE27 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8D957V42M6;
+						ProvisioningStyle = Automatic;
+					};
+					5089F1BB1E1FDD3800FADE27 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8D957V42M6;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					5089F1C31E1FDD3800FADE27 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8D957V42M6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5089F1A11E1FDCBC00FADE27;
+					};
+				};
+			};
+			buildConfigurationList = 5089F19D1E1FDCBC00FADE27 /* Build configuration list for PBXProject "Minecraft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5089F1991E1FDCBC00FADE27;
+			productRefGroup = 5089F1A31E1FDCBC00FADE27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5089F1A11E1FDCBC00FADE27 /* Minecraft */,
+				5089F1BB1E1FDD3800FADE27 /* Redstone */,
+				5089F1C31E1FDD3800FADE27 /* RedstoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5089F1A01E1FDCBC00FADE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1B01E1FDCBC00FADE27 /* LaunchScreen.storyboard in Resources */,
+				5089F1AD1E1FDCBC00FADE27 /* Assets.xcassets in Resources */,
+				5089F1AB1E1FDCBC00FADE27 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089F1BA1E1FDD3800FADE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089F1C21E1FDD3800FADE27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5089F19E1E1FDCBC00FADE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1A81E1FDCBC00FADE27 /* ViewController.swift in Sources */,
+				5089F1A61E1FDCBC00FADE27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089F1B71E1FDD3800FADE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1DB1E1FDD5300FADE27 /* StateMachine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089F1C01E1FDD3800FADE27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089F1CC1E1FDD3800FADE27 /* RedstoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5089F1C71E1FDD3800FADE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5089F1BB1E1FDD3800FADE27 /* Redstone */;
+			targetProxy = 5089F1C61E1FDD3800FADE27 /* PBXContainerItemProxy */;
+		};
+		5089F1C91E1FDD3800FADE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5089F1A11E1FDCBC00FADE27 /* Minecraft */;
+			targetProxy = 5089F1C81E1FDD3800FADE27 /* PBXContainerItemProxy */;
+		};
+		5089F1D01E1FDD3800FADE27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5089F1BB1E1FDD3800FADE27 /* Redstone */;
+			targetProxy = 5089F1CF1E1FDD3800FADE27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5089F1A91E1FDCBC00FADE27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5089F1AA1E1FDCBC00FADE27 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5089F1AE1E1FDCBC00FADE27 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5089F1AF1E1FDCBC00FADE27 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5089F1B21E1FDCBC00FADE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5089F1B31E1FDCBC00FADE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5089F1B51E1FDCBC00FADE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8D957V42M6;
+				INFOPLIST_FILE = Minecraft/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.Minecraft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5089F1B61E1FDCBC00FADE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8D957V42M6;
+				INFOPLIST_FILE = Minecraft/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.Minecraft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5089F1D41E1FDD3800FADE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8D957V42M6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Redstone/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.Redstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5089F1D51E1FDD3800FADE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8D957V42M6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Redstone/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.Redstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5089F1D81E1FDD3800FADE27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8D957V42M6;
+				INFOPLIST_FILE = RedstoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.RedstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minecraft.app/Minecraft";
+			};
+			name = Debug;
+		};
+		5089F1D91E1FDD3800FADE27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8D957V42M6;
+				INFOPLIST_FILE = RedstoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nixWork.RedstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minecraft.app/Minecraft";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5089F19D1E1FDCBC00FADE27 /* Build configuration list for PBXProject "Minecraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5089F1B21E1FDCBC00FADE27 /* Debug */,
+				5089F1B31E1FDCBC00FADE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5089F1B41E1FDCBC00FADE27 /* Build configuration list for PBXNativeTarget "Minecraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5089F1B51E1FDCBC00FADE27 /* Debug */,
+				5089F1B61E1FDCBC00FADE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5089F1D31E1FDD3800FADE27 /* Build configuration list for PBXNativeTarget "Redstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5089F1D41E1FDD3800FADE27 /* Debug */,
+				5089F1D51E1FDD3800FADE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5089F1D71E1FDD3800FADE27 /* Build configuration list for PBXNativeTarget "RedstoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5089F1D81E1FDD3800FADE27 /* Debug */,
+				5089F1D91E1FDD3800FADE27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5089F19A1E1FDCBC00FADE27 /* Project object */;
+}
