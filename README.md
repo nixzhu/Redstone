@@ -32,23 +32,14 @@ class Lights {
     }
     lazy var stateMachine: StateMachine<State, Transition> = {
         let stateMachine = StateMachine<State, Transition>()
-        stateMachine.add(state: .off) { [weak self] in
-            self?.statusBarStyle = .lightContent
-            self?.view.backgroundColor = .black
-            self?.promptLabel.textColor = .white
-            self?.promptLabel.text = "Tap to turn lights on"
+        stateMachine.add(state: .off) {
+            print("Lights off")
         }
-        stateMachine.add(state: .on) { [weak self] in
-            self?.statusBarStyle = .default
-            self?.view.backgroundColor = .white
-            self?.promptLabel.textColor = .black
-            self?.promptLabel.text = "Tap to turn lights off"
+        stateMachine.add(state: .on) {
+            print("Lights on")
         }
-        stateMachine.add(state: .broken) { [weak self] in
-            self?.statusBarStyle = .lightContent
-            self?.view.backgroundColor = .black
-            self?.promptLabel.textColor = .white
-            self?.promptLabel.text = "The wire is broken :["
+        stateMachine.add(state: .broken) {
+            print("Lights broken")
         }
         stateMachine.add(transition: .turn, fromState: .off, toState: .on)
         stateMachine.add(transition: .turn, fromState: .on, toState: .off)
@@ -69,6 +60,8 @@ Or cut the wire (it will can not been turn on again):
 ``` swift
 stateMachine.fire(transition: .cut)
 ```
+
+Run the demo if you like.
 
 ## Installation
 
