@@ -20,6 +20,8 @@ If your room has lights, you can turn it on or turn it off. If you cut the wire,
 We can define states and transitions to descripe the state machine:
 
 ``` swift
+import Redstone
+
 class Lights {
     enum State: Int {
         case off
@@ -49,19 +51,28 @@ class Lights {
 }
 ```
 
-You can turn the lights from off to on, or from on to off:
+We create a lights, set it's initial state to off.
 
 ``` swift
-stateMachine.fire(transition: .turn)
+let lights = Lights()
+lights.stateMachine.initialState = .off
 ```
 
-Or cut the wire (it will can not been turn on again):
+Now you can turn the lights from off to on, or from on to off:
 
 ``` swift
-stateMachine.fire(transition: .cut)
+lights.stateMachine.fire(transition: .turn)
 ```
 
-Run the demo if you like.
+Or cut the wire:
+
+``` swift
+lights.stateMachine.fire(transition: .cut)
+```
+
+It will can not been turn on again.
+
+Run the demo to feel it if you like.
 
 ## Installation
 
