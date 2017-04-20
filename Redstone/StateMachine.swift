@@ -10,6 +10,7 @@ public class StateMachine<State: Hashable, Transition: Hashable> {
     public typealias Operation = () -> Void
     private var body = [State: Operation?]()
     public var previousState: State?
+    public var lastTransition: Transition?
     private var currentState: State? {
         willSet {
             previousState = currentState
@@ -46,6 +47,7 @@ public class StateMachine<State: Hashable, Transition: Hashable> {
     public func fire(transition: Transition) {
         guard let state = currentState else { return }
         guard let toState = stateTransitionTable[state]?[transition] else { return }
+        lastTransition = transition
         currentState = toState
     }
 }
