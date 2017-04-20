@@ -9,7 +9,11 @@
 public class StateMachine<State: Hashable, Transition: Hashable> {
     public typealias Operation = () -> Void
     private var body = [State: Operation?]()
+    public var previousState: State?
     private var currentState: State? {
+        willSet {
+            previousState = currentState
+        }
         didSet {
             if let state = currentState {
                 body[state]??()
