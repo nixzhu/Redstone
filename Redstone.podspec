@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name        = "Redstone"
-  s.version     = "0.1.0"
+  s.version     = "0.2.0"
   s.summary     = "Redstone has a State Machine."
 
   s.description = <<-DESC
