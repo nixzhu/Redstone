@@ -9,9 +9,9 @@
 public class StateMachine<State: Hashable, Transition: Hashable> {
     public typealias Operation = () -> Void
     private var body = [State: Operation?]()
-    public var previousState: State?
-    public var lastTransition: Transition?
-    private var currentState: State? {
+    public private(set) var previousState: State?
+    public private(set) var lastTransition: Transition?
+    public private(set) var currentState: State? {
         willSet {
             previousState = currentState
         }
