@@ -9,7 +9,9 @@ Redstone has a State Machine.
 
 ## Requirements
 
-Swift 3, iOS 8
+Swift 4, iOS 8
+
+(Swift 3, use version 0.3.0)
 
 ## Example
 
